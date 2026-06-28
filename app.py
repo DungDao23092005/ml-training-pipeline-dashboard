@@ -2,6 +2,7 @@ import streamlit as st
 from src.data_ingestion import render_data_ingestion_ui
 from src.preprocessing import render_preprocessing_ui
 from src.model_training import render_model_training_ui
+from src.evaluation import render_evaluation_ui # Import module đánh giá
 
 def main():
     st.set_page_config(page_title="ML Training Pipeline", layout="wide")
@@ -19,7 +20,7 @@ def main():
         index=steps.index(st.session_state['current_step'])
     )
 
-    # Quản lý vòng lặp luồng hoạt động chuyển tiếp tự động giữa các bước
+    # Điều hướng logic tích hợp toàn bộ hệ thống
     if selected_step == "Data Ingestion":
         success = render_data_ingestion_ui()
         if success:
@@ -36,7 +37,7 @@ def main():
             st.session_state['current_step'] = "Evaluation"
             
     elif selected_step == "Evaluation":
-        st.info("Module Đánh giá hiệu suất đang đợi mô hình từ bước huấn luyện.")
+        render_evaluation_ui()
 
 if __name__ == "__main__":
     main()
