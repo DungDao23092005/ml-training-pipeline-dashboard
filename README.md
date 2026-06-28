@@ -192,6 +192,7 @@ The application will launch in your default web browser at `http://localhost:850
 - [feat: add data preprocessing logic](https://github.com/DungDao23092005/ml-training-pipeline-dashboard/commit/b8faec1ba0a487f586673b97e473516e99875923)
 - [feat: implement data ingestion and caching module](https://github.com/DungDao23092005/ml-training-pipeline-dashboard/commit/aa9e1841c4c5eb2cf12903fa6250b7a1aa23f4e9)
 - [chore: add requirements.txt for dependencies](https://github.com/DungDao23092005/ml-training-pipeline-dashboard/commit/990058a4a701d187acf563db508afd22fc565f07)
+- [feat: implement evaluation metrics and visualization](https://github.com/DungDao23092005/ml-training-pipeline-dashboard/commit/32c76f50f5b9c649eb7a6e453e951dfef513ebec)
 
 ---
 
